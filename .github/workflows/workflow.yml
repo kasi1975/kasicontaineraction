@@ -5,12 +5,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
     - name: run the action
       id: hello
       uses: ./
       with:
-        myInput: 'viswanathan'
+        myInput: 'Chad'
     - name: output the memory
       run: |
         echo ${{ steps.hello.outputs.memory }}
-        echo "job finished"
+        echo "total memory successfully output"
