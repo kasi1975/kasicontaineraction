@@ -10,8 +10,8 @@ jobs:
       id: hello
       uses: ./
       with:
-        myInput: 'Chad'
+        myInput: 'viswanathan'
     - name: output the memory
       run: |
         echo ${{ steps.hello.outputs.memory }}
-        echo "total memory successfully output"
+        echo "job finished"
